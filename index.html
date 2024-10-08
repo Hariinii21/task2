@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Delivery Service</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50">
+    <!-- Navbar -->
+    <header class="bg-white shadow-md">
+        <div class="container mx-auto flex justify-between items-center py-4 px-6">
+            <h1 class="text-2xl font-bold text-red-500">Foodie's Hub</h1>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="#" class="text-gray-700 hover:text-red-500">Home</a></li>
+                    <li><a href="#" class="text-gray-700 hover:text-red-500">Restaurants</a></li>
+                    <li><a href="./cart.html" class="text-gray-700 hover:text-red-500">Cart</a></li>
+                    <li><a href="./contact.html" class="text-gray-700 hover:text-red-500">Contact</a></li>
+                </ul>
+            </nav>
+            <div>
+                <button class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600">
+                    <a href="./signin.html"> Sign In </a>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-red-500 text-white py-20">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-4">Delicious Food, Delivered To Your Doorstep</h2>
+            <p class="text-lg mb-8">Order from your favorite restaurants and get your food delivered in minutes.</p>
+            <form class="max-w-lg mx-auto">
+                <input type="text" placeholder="Enter your location" class="w-3/4 px-4 py-2 rounded-l-lg border-none focus:outline-none">
+                <button class="bg-white text-red-500 px-6 py-2 rounded-r-lg hover:bg-gray-200">Find Food</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Featured Restaurants -->
+    <section class="py-12">
+        <div class="container mx-auto text-center">
+            <h3 class="text-3xl font-bold mb-6">Popular Restaurants</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Restaurant 1 -->
+                <div class="bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow">
+                    <img src="https://img.freepik.com/free-photo/delicious-pizza-studio_23-2151846558.jpg" alt="Pizza" class="w-full h-48 object-cover rounded-t-lg">
+                    <div class="p-6">
+                        <h4 class="text-2xl font-semibold text-gray-800">Pizza Palace</h4>
+                        <p class="text-gray-600 mt-2">Best pizza in town with a variety of toppings to choose from.</p>
+                        <button class="bg-red-500 text-white mt-4 px-4 py-2 rounded hover:bg-red-600">
+                            <a href="pizza.html"> Order now </a>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Restaurant 2 -->
+                <div class="bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow">
+                    <img src="https://img.freepik.com/free-photo/delicious-burgers-with-bright-lights_23-2150902198.jpg" alt="Burger" class="w-full h-48 object-cover rounded-t-lg">
+                    <div class="p-6">
+                        <h4 class="text-2xl font-semibold text-gray-800">Burger Joint</h4>
+                        <p class="text-gray-600 mt-2">Juicy burgers with fries and refreshing drinks.</p>
+                        <button class="bg-red-500 text-white mt-4 px-4 py-2 rounded hover:bg-red-600">
+                            <a href="burger.html"> Order now </a>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Restaurant 3 -->
+                <div class="bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow">
+                    <img src="https://img.freepik.com/free-photo/maki-roll-with-cucumber-served-with-sauce-sesame-seeds_141793-789.jpg" alt="Sushi" class="w-full h-48 object-cover rounded-t-lg">
+                    <div class="p-6">
+                        <h4 class="text-2xl font-semibold text-gray-800">Sushi World</h4>
+                        <p class="text-gray-600 mt-2">Fresh sushi rolls and sashimi from the best seafood.</p>
+                        <button class="bg-red-500 text-white mt-4 px-4 py-2 rounded hover:bg-red-600">
+                            <a href="sushi.html"> Order now </a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="py-12 bg-gray-100">
+        <div class="container mx-auto text-center">
+            <h3 class="text-3xl font-bold mb-6">Browse Categories</h3>
+            <div class="flex flex-wrap justify-center gap-6">
+                <a href="#" class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg text-red-500 font-bold transition-shadow">Pizza</a>
+                <a href="#" class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg text-red-500 font-bold transition-shadow">Burgers</a>
+                <a href="#" class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg text-red-500 font-bold transition-shadow">Chinese</a>
+                <a href="#" class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg text-red-500 font-bold transition-shadow">Indian</a>
+                <a href="#" class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg text-red-500 font-bold transition-shadow">Sushi</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-6">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 Foodie's Hub. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

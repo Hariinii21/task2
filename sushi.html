@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sushi World - Order Now</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+
+    <!-- Order Now Section -->
+    <section class="py-12">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto bg-white rounded-lg shadow-lg p-8">
+                
+                <!-- Sushi Image and Info -->
+                <div class="flex flex-col md:flex-row items-center">
+                    <!-- Sushi Image -->
+                    <img src="https://source.unsplash.com/200x200/?sushi" alt="Sushi" class="w-48 h-48 rounded-lg mb-6 md:mb-0 md:mr-8">
+                    
+                    <!-- Sushi Description -->
+                    <div>
+                        <h2 class="text-3xl font-bold text-gray-800 mb-4">Salmon Sushi Platter</h2>
+                        <p class="text-gray-600 mb-4">Freshly prepared salmon sushi rolls with a side of wasabi, soy sauce, and pickled ginger. Perfect for sushi lovers!</p>
+                        <p class="text-lg font-semibold text-gray-800">Price: <span class="text-red-500">Rs 150.00</span></p>
+                    </div>
+                </div>
+
+                <!-- Order Form -->
+                <form action="#" method="POST" class="mt-8">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <!-- Sushi Type Selector -->
+                        <div>
+                            <label for="type" class="block text-gray-700 font-semibold mb-2">Choose Sushi Type</label>
+                            <select id="type" name="type" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-red-500 outline-none">
+                                <option value="salmon">Salmon Sushi - Rs 150.00</option>
+                                <option value="tuna">Tuna Sushi - Rs. 180.00</option>
+                                <option value="vegetarian">Vegetarian Sushi - Rs 200.00</option>
+                            </select>
+                        </div>
+
+                        <!-- Quantity Selector -->
+                        <div>
+                            <label for="quantity" class="block text-gray-700 font-semibold mb-2">Quantity</label>
+                            <div class="flex items-center">
+                                <button type="button" class="text-red-500 px-4" onclick="decreaseQuantity()">-</button>
+                                <input type="number" id="quantity" name="quantity" value="1" min="1" class="w-16 text-center border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-red-500 outline-none">
+                                <button type="button" class="text-red-500 px-4" onclick="increaseQuantity()">+</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Customizations -->
+                    <div class="mt-6">
+                        <h3 class="text-lg font-semibold text-gray-800 mb-4">Add Customizations</h3>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <!-- Extra Toppings Checkboxes -->
+                            <div>
+                                <label class="block text-gray-700 font-semibold mb-2">Extra Toppings</label>
+                                <div class="flex items-center mb-2">
+                                    <input type="checkbox" id="extra-wasabi" name="toppings[]" value="extra wasabi" class="mr-2">
+                                    <label for="extra-wasabi" class="text-gray-700">Extra Wasabi Rs.50</label>
+                                </div>
+                                <div class="flex items-center mb-2">
+                                    <input type="checkbox" id="extra-soy-sauce" name="toppings[]" value="extra soy sauce" class="mr-2">
+                                    <label for="extra-soy-sauce" class="text-gray-700">Extra Soy Sauce Rs.50</label>
+                                </div>
+                                <div class="flex items-center mb-2">
+                                    <input type="checkbox" id="extra-ginger" name="toppings[]" value="extra ginger" class="mr-2">
+                                    <label for="extra-ginger" class="text-gray-700">Extra Pickled Ginger Rs.50</label>
+                                </div>
+                            </div>
+
+                            <!-- Sauce Checkboxes -->
+                            <div>
+                                <label class="block text-gray-700 font-semibold mb-2">Sauces</label>
+                                <div class="flex items-center mb-2">
+                                    <input type="checkbox" id="spicy-mayo" name="sauce[]" value="spicy mayo" class="mr-2">
+                                    <label for="spicy-mayo" class="text-gray-700">Spicy Mayo Rs.50</label>
+                                </div>
+                                <div class="flex items-center mb-2">
+                                    <input type="checkbox" id="teriyaki" name="sauce[]" value="teriyaki" class="mr-2">
+                                    <label for="teriyaki" class="text-gray-700">Teriyaki Sauce Rs.50</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Order Button -->
+                    <div class="text-right mt-8">
+                        <button type="submit" class="bg-red-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-red-600 transition-all">Order Now</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
